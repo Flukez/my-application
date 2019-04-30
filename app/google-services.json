@@ -1,0 +1,44 @@
+{
+  "project_info": {
+    "project_number": "962975626678",
+    "firebase_url": "https://fir-authnew-65746.firebaseio.com",
+    "project_id": "fir-authnew-65746",
+    "storage_bucket": "fir-authnew-65746.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:962975626678:android:361bbd7ec35d7b6b",
+        "android_client_info": {
+          "package_name": "com.example.e_ticket"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "962975626678-9dn6q9vft7ahormqvcehuoc8srodt0k2.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.example.e_ticket",
+            "certificate_hash": "300ec1c9463af5df54def2981bab344b720aa4a9"
+          }
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyAYFrlE7W6DAZwwPuo2T1nD_qoZAyJRTF8"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "962975626678-sv849u4vt2ls5ii03subhr5pjeran516.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
