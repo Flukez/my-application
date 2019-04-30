@@ -70,23 +70,22 @@ public class PostListActivity extends AppCompatActivity {
                         .inflate(R.layout.row, parent, false);
 
                 ///////////////////////ที่ทำใหม่//////////////////////////
-
-                ViewHolder viewHolder = super.onCreateViewHolder(parent, viewType);
-//                ViewHolder viewHolder = onCreateViewHolder(parent,viewType);
+                ViewHolder viewHolder = new ViewHolder(view);
                 viewHolder.setOnClickListener(new ViewHolder.ClickListener() {
                     @Override
                     public void onItemClick(View view, int position) {
-                        //view
+                        // View
                         TextView mTitleTv = view.findViewById(R.id.rTitleTv);
                         TextView mDescTv = view.findViewById(R.id.rDescriptionTv);
                         ImageView mImageView = view.findViewById(R.id.rImageView);
-                        //get data from views
+
+                        // Get data from views
                         String mTitle = mTitleTv.getText().toString();
                         String mDesc = mDescTv.getText().toString();
                         Drawable mDrawable = mImageView.getDrawable();
                         Bitmap mBitmap = ((BitmapDrawable)mDrawable).getBitmap();
 
-                        //pass this data to new activity
+                        // Pass this data to new activity
                         Intent intent = new Intent(view.getContext(), PostDetailActivity.class);
                         ByteArrayOutputStream stream = new ByteArrayOutputStream();
                         mBitmap.compress(Bitmap.CompressFormat.JPEG, 100, stream);
@@ -95,17 +94,16 @@ public class PostListActivity extends AppCompatActivity {
                         intent.putExtra("title", mTitle); //put tile
                         intent.putExtra("description", mDesc); //put description
                         startActivity(intent); //start activity
-
                     }
 
                     @Override
                     public void onItemLongClick(View view, int position) {
-                        //TOD do your own implementtaion on long item click
+                        //TODO do your own implementtaion on long item click
                     }
                 });
 
                 ///////////////////////////////////////////////
-                return new ViewHolder(view);
+                return viewHolder;
             }
 
             @Override
